@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Didact+Gothic&family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/folha.png">
+    <title>Sistema Academia</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="cabecalho">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+                        <li> <a href="sobre.html">SOBRE</a> </li>
+                        <li> <a href="formulario.php">CADASTRO</a> </li>
+                    </ul>
+                </nav>
+                <div class="menu2">
+                    <img src="img/logo1.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <form method="post" action="formulario.php">
+
+            <div class="cabecalho">
+                <img src="img/LOGO.png">
+            </div>
+            
+            <div class="corpo">
+            
+                <label class="matricula"></label>
+                <input type="text" name="txtMatricula" id="nome" value="{matricula}" readonly>
+
+                <label class="nome"></label>
+                <input type="text" name="txtNome" id="nome" value="{nome}" required>
+
+                <label class="endereco"></label>
+                <input type="text" name="txtEndereco" id="endereco" value="{endereco}">
+                
+                <label class="cep"></label>
+                <input type="text" name="txtCep" id="cep" value="{cep}">
+                
+                <label class="bairro"></label>
+                <input type="text" name="txtBairro" id="bairro" value="{bairro}">
+               
+                <label class="cidade"></label>
+                <input type="text" name="txtCidade" id="cidade" value="{cidade}">
+              
+                <label class="uf"></label>
+                <input type="text" name="txtUF" id="uf" value="{uf}">
+          
+                <label class="celular"></label>
+                <input type="text" name="txtCelular" id="celular" value="{celular}">
+              
+                <label class="email"></label>
+                <input type="text" name="txtEmail" id="email" value="{email}">
+                
+                <label class="nascimento"></label>
+                <input type="text" name="txtNascimento" id="nascimento" value="{nascimento}">
+            
+                <label class="idade"></label>
+                <input type="text" name="txtIdade" id="idade" value="{idade}">
+            
+                <label class="peso"></label>
+                <input type="text" name="txtPeso" id="peso" value="{peso}">
+                
+                <label class="altura"></label>
+                <input type="text" name="txtAltura" id="altura" value="{altura}">
+                
+                <label class="sexo"></label>
+                <input type="text" name="txtSexo" id="sexo" value="{sexo}">
+
+
+                <label class="imc"></label>
+                <input type="number" name="txtIMC" id="imc" step="0.01" value="{imc}">
+
+                <label class="statusImc"></label>
+                <input type="text" name="txtResultado" id="statusImc" value="{resultado}">
+
+
+                    <div class="botao">
+                        <button type="button" onclick="window.location='formulario.php' ">VOLTAR</button>
+                    </div>
+            </form>
+        </section>
+    </section>
+   
+
+</body>
+</html>

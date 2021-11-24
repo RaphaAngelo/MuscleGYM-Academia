@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Didact+Gothic&family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/folha.png">
+    <title>Sistema Academia</title>
+</head>
+<body>
+     <div class="container">
+
+        <header class="cabecalho">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+                        <li> <a href="sobre.html">SOBRE</a> </li>
+                        <li> <a href="formulario.php">CADASTRO</a> </li>
+                    </ul>
+                </nav>
+                <div class="menu2">
+                    <img src="img/logo1.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <form method="post" action="formulario.php">
+
+            <div class="cabecalho">
+                <img src="img/LOGO.png">
+            </div>
+            
+            <div class="corpo">
+            
+                <label class="nome"></label>
+                <input type="text" name="txtNome" id="nome" placeholder="NOME" autocomplete="off">
+            
+                <label class="endereco"></label>
+                <input type="text" name="txtEndereco" id="endereco" placeholder="ENDEREÇO" autocomplete="off">
+                
+                <label class="cep"></label>
+                <input type="text" name="txtCep" id="cep" placeholder="CEP" autocomplete="off">
+                
+                <label class="bairro"></label>
+                <input type="text" name="txtBairro" id="bairro" placeholder="BAIRRO" autocomplete="off">
+               
+                <label class="cidade"></label>
+                <input type="text" name="txtCidade" id="cidade" placeholder="CIDADE" autocomplete="off">
+              
+                <label class="uf"></label>
+                <input type="text" name="txtUF" id="uf" placeholder="UF" autocomplete="off">
+          
+                <label class="celular"></label>
+                <input type="number" name="txtCelular" id="celular" placeholder="CELULAR"  autocomplete="off">
+              
+                <label class="email"></label>
+                <input type="text" name="txtEmail" id="email" placeholder="EMAIL" autocomplete="off">
+                
+                <label class="nascimento"></label>
+                <input type="date" name="txtNascimento" id="nascimento"  autocomplete="off">
+            
+                <label class="idade"></label>
+                <input type="number" name="txtIdade" id="idade" placeholder="IDADE" autocomplete="off">
+            
+                <label class="peso"></label>
+                <input type="number" name="txtPeso" id="peso" placeholder="PESO" autocomplete="off">
+                
+                <label class="altura"></label>
+                <input type="text" name="txtAltura" id="altura" placeholder="ALTURA" autocomplete="off">
+                
+                <label class="sexo"></label>
+                <input type="text" name="txtSexo" id="sexo" placeholder="SEXO" autocomplete="off">
+                
+            </div>
+
+                <div class="botoes">
+
+                    <div class="botao1">
+                        <button class="btn btn-1" value="salvar" name="btn">INSERIR</button>
+                        <button type="reset">LIMPAR</button>
+                    </div>
+
+            </form>
+
+                <form method="post" action="formulario.php">
+                        <div class="botao2">
+                        <button class="btnPesquisar" type="submit" value="pesquisarMatricula" name="btn">PESQUISAR MATRÍCULA</button>
+                        <input type="number" name="txtPesquisarMatricula" id="nomeInput" required>
+                        </div>
+                    </div>
+                </form>
+                <form method="post" action="formulario.php">
+                <button class="btnPesquisarNome" type="submit" value="pesquisarNome" name="btn">PESQUISAR NOME</button>
+                <input type="text" name="txtPesquisarNome" id="nomeInput" required autocomplete="off">
+            </form>
+    </div>
+</body>
+</html>

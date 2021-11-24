@@ -1,0 +1,704 @@
+/*--------------Trabalho Feito Por Lucas Mont-Mor e Raphael Angelo--------------*/
+
+ *{
+    box-sizing: border-box;
+    margin: 0 auto;
+}   
+
+.container {
+    margin: 0 auto;
+    max-width: 1680px;
+    background-color: #000000;
+}
+
+.cabecalho{
+     width: 100%;
+     height: 600px;
+     background-image: url("img/CAPA.jpg");
+     background-position: top;
+     background-repeat: no-repeat;
+}
+
+.menu{
+    padding: 30px ;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dosis';
+    font-weight: bolder;
+}
+
+.menu a{
+    padding: 17px;
+}
+
+.menu nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-inline-start: 0px;
+
+}
+.menu nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.menu2 img{
+    max-width: 55%;
+    margin-top: 200px;
+}
+
+.imagem-left img{
+    max-width: 46%;
+    float: left;
+}
+
+.texto-img h1{
+    color: aliceblue;
+    text-align: right;
+    font-size: 120px;
+    float: right;
+    margin-top: 90px;
+    padding-bottom: 40px;
+    padding-left: 300px;
+    padding-right: 30px;
+    font-family: 'Bebas Neue';
+}
+
+.texto-img h2{
+    font-family: 'Dosis';
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: right;
+}
+
+.imagem-right img{
+    max-width: 46%;
+    float: right;
+    margin-top: 400px;
+}
+
+.texto-img1 h1{
+    color: aliceblue;
+    text-align: left;
+    font-size: 90px;
+    margin-top: 700px;
+    margin-bottom: 400px;
+    font-family: 'Bebas Neue';
+    padding-left: 30px;
+}
+
+.texto-img  {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: right;
+
+}
+
+
+
+
+/*--------------Botão--------------*/
+
+.form-contato p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.main-contato{
+    max-width: 100%;
+    text-align: center;
+    padding: 100px;
+}
+
+.formulario{
+    border: 2PX solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    padding: 25px 10px;
+    width: 50%;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+
+:root {
+  --text-color: rgb(255, 255, 255);
+  --btn-color: hsl(117, 20%, 40%);
+  --bg-color: #141218;
+}
+
+button {
+  position:relative;
+  padding: 10px 30px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Reem Kufi";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;  
+  color: var(--text-color);
+ 
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+/*--------------Rodape--------------*/
+
+hr{
+    margin-bottom: 50px;
+}
+
+.rodape {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;  
+    font-family: 'Bebas Neue';
+
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+/*--------------STYLE SOBRE--------------*/
+
+.container-sobre{
+    max-width: 1680px;
+    height: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.imagemCapa-sobre{
+    background-image: url("img/3259954.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 600px;
+}
+
+.menu-sobre{
+    max-width: 100%;
+    height: 0 auto;
+    margin: 0;
+}
+
+.menuSobre1{
+    padding-top: 20px;
+    padding-bottom: 70px;
+    font-size: 16px;
+    font-family: 'Dosis';
+    font-weight: bolder;
+
+}
+
+.menuSobre1 ul li{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.menuSobre1 a{
+    text-decoration: none;
+    padding: 19px;
+    color: aliceblue;
+}
+
+
+.textos-sobre h1{
+    font-size: 67px;
+    padding: 50px 0px 20px 0px;
+    font-family: 'Bebas Neue' ;
+    color: rgb(255, 255, 255);
+}
+
+.textos-sobre h3{
+    padding-bottom: 30px;
+    font-family: 'Bebas Neue' ;
+    color: aliceblue;
+    font-size: 38px;
+}
+
+.texto1-sobre{
+    font-size: 35px;
+    font-family: 'PT Sans';
+    color: aliceblue;
+}
+
+.imagem-sobre1 img{
+    max-width: 45%;
+    float: right;
+}
+
+.texto-sobre1 h1{
+    font-size: 50px;
+    color: aliceblue;
+    padding-top: 200px;
+    margin-bottom: 500px;
+    font-family: 'Bebas Neue';
+    padding-left: 20px;
+}
+
+.rodape {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    font-family: 'Bebas Neue';
+
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+
+@media screen and ( max-width: 992px ){
+
+    .container {
+        margin: 0 auto;
+        max-width: 992px;
+        background-color: rgb(0, 0, 0);
+    }
+
+
+    .menu{
+        padding: 30px ;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Dosis';
+        font-weight: bolder;
+    }
+    
+    .menu a{
+        padding: 17px;
+    }
+    
+    .menu nav ul li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-inline-start: 0px;
+    
+    }
+    .menu nav ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    
+    .menu2 img{
+        max-width: 75%;
+        margin-top: 200px;
+    }
+    
+    .imagem-left img{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .texto-img h1{
+        color: aliceblue;
+        text-align: center;
+        font-size: 100px;
+        float: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: 'Bebas Neue';
+    }
+    
+    .texto-img h2{
+        font-family: 'Dosis';
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 60px;
+        text-align: center;
+        padding-top: 100px;
+
+    }
+    
+    
+    .imagem-right img{
+        max-width: 100%;
+        float: right;
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+    
+    .texto-img1 h1{
+        color: aliceblue;
+        text-align: center;
+        font-size: 100px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Bebas Neue';
+        padding-left: 0px;
+    }
+    
+    .texto-img  {
+        color: aliceblue;
+        font-size: 30px;
+        text-align: right;
+    
+    }
+
+    .rodape {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        height: 100px;  
+        font-family: 'Bebas Neue';
+
+    }
+
+    hr{
+        margin-bottom: 30px;
+    }
+
+    /*--------------STYLE SOBRE--------------*/
+
+.container-sobre{
+    max-width: 992px;
+    height: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.imagemCapa-sobre{
+    background-image: url("img/3259954.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 600px;
+}
+
+.menu-sobre{
+    max-width: 100%;
+    height: 0 auto;
+    margin: 0;
+}
+
+.menuSobre1{
+    padding-top: 20px;
+    padding-bottom: 70px;
+    font-size: 30px;
+    font-family: 'Dosis';
+    font-weight: bolder;
+}
+
+.menuSobre1 ul li{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.menuSobre1 a{
+    text-decoration: none;
+    padding: 19px;
+    color: aliceblue;
+}
+
+
+.textos-sobre h1{
+    font-size: 67px;
+    padding: 50px 0px 20px 0px;
+    font-family: 'Bebas Neue' ;
+    color: rgb(255, 255, 255);
+}
+
+.textos-sobre h3{
+    padding-bottom: 30px;
+    font-family: 'Bebas Neue' ;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.texto1-sobre{
+    font-size: 25px;
+    font-family: 'PT Sans';
+    color: aliceblue;
+}
+
+.imagem-sobre1 img{
+    max-width: 60%;
+    float: right;
+}
+
+.texto-sobre1 h1{
+    font-size: 40px;
+    color: aliceblue;
+    padding-top: 200px;
+    margin-bottom: 300px;
+    font-family: 'Bebas Neue';
+    margin-left: 20px;
+}
+
+.rodape {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    font-family: 'Bebas Neue';
+
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+    
+    
+}
+
+@media screen and ( max-width: 662px ){
+
+
+    .container {
+        margin: 0 auto;
+        max-width: 662px;
+        background-color: rgb(0, 0, 0);
+    }
+
+
+    .menu{
+
+        text-align: center;
+        font-size: 26px;
+        font-family: 'Dosis';
+        font-weight: bold;
+    }
+    
+    .menu a{
+        padding: 10px;
+    }
+    
+    .menu nav ul li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-inline-start: 0px;
+    
+    }
+    .menu nav ul li a {
+        text-decoration: none;
+        color:white;
+    }
+    
+    .menu2 img{
+        max-width: 98%;
+        margin-top: 200px;
+    }
+    
+    .imagem-left img{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .texto-img h1{
+        color: aliceblue;
+        text-align: center;
+        font-size: 76px;
+        float: none;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: 'Bebas Neue';
+    }
+    
+    .texto-img h2{
+        font-family: 'Dosis';
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 100px;
+        font-size: 35px;
+        text-align: center;
+
+    }
+
+    
+    .imagem-right img{
+        max-width: 100%;
+        float: right;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+    
+    .texto-img1 h1{
+        color: aliceblue;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Bebas Neue';
+        padding-left: 0px;
+    }
+
+    .rodape {
+        margin-top: 90px;
+        
+    }
+
+        /*--------------STYLE SOBRE--------------*/
+
+.container-sobre{
+    max-width: 662px;
+    height: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.imagemCapa-sobre{
+    background-image: url("img/3259954.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 600px;
+}
+
+.menu-sobre{
+    max-width: 100%;
+    height: 0 auto;
+    margin: 0;
+}
+
+.menuSobre1{
+    padding-top: 20px;
+    padding-bottom: 70px;
+    font-size: 30px;
+    font-family: 'Dosis';
+    font-weight: bolder;
+}
+
+.menuSobre1 ul li{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.menuSobre1 a{
+    text-decoration: none;
+    padding: 19px;
+    color: aliceblue;
+}
+
+
+.textos-sobre h1{
+    font-size: 67px;
+    padding: 50px 0px 20px 0px;
+    font-family: 'Bebas Neue' ;
+    color: rgb(255, 255, 255);
+}
+
+.textos-sobre h3{
+    padding-bottom: 30px;
+    font-family: 'Bebas Neue' ;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.texto1-sobre{
+    font-size: 23px;
+    font-family: 'PT Sans';
+    color: aliceblue;
+}
+
+.imagem-sobre1 img{
+    max-width: 100%;
+    float: right;
+}
+
+.texto-sobre1 h1{
+    font-size: 40px;
+    color: aliceblue;
+    padding-top: 200px;
+    margin-bottom: 100px;
+    font-family: 'Bebas Neue';
+    margin-left: 20px;
+}
+
+.rodape {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    font-family: 'Bebas Neue';
+
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
